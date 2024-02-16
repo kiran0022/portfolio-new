@@ -10,7 +10,7 @@ export type IProject = {
   live?: string;
 };
 
-export enum S {
+enum S {
   Nextjs = "Next Js",
   Reactjs = "React Js",
   Typescript = "Typescript",
