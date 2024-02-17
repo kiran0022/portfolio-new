@@ -16,8 +16,8 @@ import { BiMailSend, BiPhoneCall } from "react-icons/bi";
 import { FiPhoneCall } from "react-icons/fi";
 export default function Home() {
   return (
-    <div className=" h-[90vh] grid grid-rows-3 justify-center items-center grid-cols-3 ">
-      <div className="flex col-span-2 space-x-10 lg:ms-40 ms-5 mt-4 w">
+    <div className=" h-[90vh] lg:grid flex flex-col justify-around grid-rows-3 lg:justify-center items-center lg:grid-cols-3  ">
+      <div className="flex lg:col-span-2 space-x-10 lg:ms-40 ms-5 mt-4 w">
         <p>
           <FaLinkedin className="w-12 h-12 rounded-xl" />
         </p>
