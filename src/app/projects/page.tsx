@@ -7,7 +7,7 @@ export type IProject = {
   img: string;
   techStacks: string[];
   codebase: string;
-  live?: string;
+  live: string;
 };
 
 enum S {

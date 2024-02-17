@@ -12,7 +12,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="max-w-7xl flex justify-between lg:p-2  bg-white/10  mt-4 rounded-lg shadow-xl items-center backdrop-blur-xl sticky  ">
+    <nav className="max-w-7xl flex justify-between lg:p-2  bg-white/20  mt-4 rounded-lg shadow-xl items-center backdrop-blur-sm sticky  ">
       <div className="">
         <Link href={"/"}>
           <Image
@@ -21,14 +21,9 @@ export default function Navbar() {
             quality={100}
             className="ml-5 w-14 p-2 dark:text-white stroke-transparent"
           />
-
-          {/* <p className="font-medium">
-            script by <br />{" "}
-            <span className="font-extrabold text-xl font">kiran</span>
-          </p> */}
         </Link>
       </div>
-      <div className="flex gap-9 items-center">
+      <div className="flex gap-3 lg:gap-9 items-center">
         <Link
           href={"/about"}
           className={cn(

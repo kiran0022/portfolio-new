@@ -1,8 +1,7 @@
 "use client";
-
-import { FaScrewdriver } from "react-icons/fa6";
 import lottiJson from "../../../public/lottie.json";
-import Lottie from "react-lottie-player";
+import Lottie from "react-lottie-player/dist/LottiePlayerLight";
+
 export default function page() {
   return (
     <div className="max-w-5xl ">
