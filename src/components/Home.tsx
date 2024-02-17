@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import background from "../../public/images/background.png";
+import Link from "next/link";
 
 import Animate from "./Animate";
 import { BsLinkedin, BsPhone } from "react-icons/bs";
@@ -19,16 +20,26 @@ export default function Home() {
     <div className=" h-[90vh] lg:grid flex flex-col justify-around grid-rows-3 lg:justify-center items-center lg:grid-cols-3  ">
       <div className="flex lg:col-span-2 space-x-10 lg:ms-40 ms-5 mt-4 w">
         <p>
-          <FaLinkedin className="w-12 h-12 rounded-xl" />
+          <Link
+          href={"https://www.linkedin.com/in/kiran-kumar-k-61ba89203/"} ><FaLinkedin className="w-12 h-12 rounded-xl" /></Link>
+          
         </p>
         <p>
-          <FaGithub className="w-12 h-12 " />
+           <Link
+          href={"https://github.com/kiran0022"} >
+          <FaGithub className="w-12 h-12 " /></Link>
         </p>
         <p>
-          <FaXTwitter className="w-12 h-12" />
+          <Link
+          href={"https://twitter.com/home"} >
+          <FaXTwitter className="w-12 h-12" /></Link>
+          
         </p>
         <p>
-          <FaInstagram className="w-12 h-12" />
+          <Link
+          href={"https://www.instagram.com/"} >
+          <FaInstagram className="w-12 h-12" /></Link>
+          
         </p>
       </div>
 
