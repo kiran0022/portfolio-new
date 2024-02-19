@@ -47,9 +47,13 @@ export default function Navbar() {
         >
           Projects
         </Link>
-        <Button variant={"outline"} className="mr-5">
-          Contact
+        <Button variant={"outline"} className="mr-5 hover:font-semibold">
+          <a href="/KiranKumar-Resume.pdf">Resume</a>
         </Button>
+
+        {/* <Button variant={"outline"} className="mr-5">
+          Contact
+        </Button> */}
         {/* <ThemeToggle /> */}
       </div>
     </nav>
