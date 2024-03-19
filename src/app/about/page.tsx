@@ -23,7 +23,7 @@ export default function page() {
     "Python",
   ];
   return (
-    <div className="max-w-4xl h-[90vh] mx-auto overflow-y-scroll">
+    <div className="max-w-4xl h-[90vh] mx-auto overflow-y-hidden">
       <div className="mt-6 ">
         <AboutBoard />
 
