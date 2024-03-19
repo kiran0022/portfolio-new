@@ -141,7 +141,7 @@ export default function page() {
   ];
 
   return (
-    <div className="h-[85vh] max-w-5xl overflow-y-scroll scrollbar-track-blue-lighter scrollbar-thumb-blue scrollbar-thumb-rounded scrollbar-w-2 scroll-my-28 scroll-ms-40 mb-3 scroll-smooth">
+    <div className="h-[90vh] max-w-5xl ">
       <div className="h-[100%] overflow-y-scroll scrollbar-track-blue-lighter scrollbar-thumb-blue scrollbar-thumb-rounded scrollbar-w-2 scroll-my-28 scroll-ms-40 mb-3 scroll-smooth ">
         {card.map((project, _idx) => (
           <>
