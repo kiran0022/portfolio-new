@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
       <body
         className={cn(
           space_Grotesk.className,
@@ -41,10 +41,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <HomeBackground />
-          <main
-            className="max-w-5xl p-2 relative mx-auto max-h-screen "
-            suppressHydrationWarning={true}
-          >
+          <main className="max-w-5xl relative mx-auto h-[100dvh]">
             <Navbar />
             {children}
           </main>

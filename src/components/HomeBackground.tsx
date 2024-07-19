@@ -7,7 +7,7 @@ export default function HomeBackground() {
       src={background}
       fill
       alt="bg"
-      className="backdrop-blur-2xl blur-xl"
+      className="backdrop-blur-2xl blur-xl fixed"
       style={{
         objectFit: "cover",
         zIndex: -5,

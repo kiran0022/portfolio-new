@@ -9,6 +9,9 @@ export default function page() {
     "React Js",
     "Typescript",
     "Javascript",
+    "Docker",
+    "React Native",
+    "Postman",
     "Zustand",
     "Tailwind CSS",
     "Rest API",
@@ -23,11 +26,11 @@ export default function page() {
     "Python",
   ];
   return (
-    <div className="max-w-4xl h-[90vh] mx-auto overflow-y-hidden">
+    <div className="max-w-4xl h-[90vh] mx-auto overflow-y-scroll no-scrollbar">
       <div className="mt-6 ">
         <AboutBoard />
 
-        <div className="space-y-5">
+        <div className="space-y-5 mb-10">
           <h2 className="text-2xl p-3 font-bold">Tech-stacks</h2>
           <div className="flex gap-5 ms-5 max-w-4xl justify-stretch flex-wrap">
             {skills.map((skill, _idx) => (

@@ -12,49 +12,53 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="max-w-7xl flex justify-between lg:p-2  bg-white/20  mt-4 rounded-lg shadow-xl items-center backdrop-blur-sm sticky  ">
-      <div className="">
-        <Link href={"/"}>
-          <Image
-            src={logo}
-            alt={"logo"}
-            quality={100}
-            className="ml-5 w-14 p-2 dark:text-white stroke-transparent"
-          />
-        </Link>
-      </div>
-      <div className="flex gap-3 lg:gap-9 items-center">
-        <Link
-          href={"/about"}
-          className={cn(
-            "font-medium",
-            pathname === "/about"
-              ? "font-semibold underline underline-offset-4"
-              : "font-light"
-          )}
-        >
-          About
-        </Link>
+    <nav className="pt-4 px-2">
+      <div className="max-w-7xl flex justify-between lg:p-2 bg-white/20  rounded-lg shadow-xl items-center backdrop-blur-sm sticky  ">
+        <>
+          <Link href={"/"}>
+            <Image
+              src={logo}
+              alt={"logo"}
+              quality={100}
+              className="ml-5 w-14 p-2 dark:text-white stroke-transparent"
+            />
+          </Link>
+        </>
+        <div className="flex gap-3 lg:gap-9 items-center">
+          <Link
+            href={"/about"}
+            className={cn(
+              "font-medium",
+              pathname === "/about"
+                ? "font-semibold underline underline-offset-4"
+                : "font-light"
+            )}
+          >
+            About
+          </Link>
 
-        <Link
-          href={"/projects"}
-          className={cn(
-            "font-medium",
-            pathname === "/projects"
-              ? "font-semibold underline underline-offset-4"
-              : "font-light"
-          )}
-        >
-          Projects
-        </Link>
-        <Button variant={"outline"} className="mr-5 hover:font-semibold">
-          <a href="/KiranKumar-Resume.pdf">Resume</a>
-        </Button>
+          <Link
+            href={"/projects"}
+            className={cn(
+              "font-medium",
+              pathname === "/projects"
+                ? "font-semibold underline underline-offset-4"
+                : "font-light"
+            )}
+          >
+            Projects
+          </Link>
+          <Button variant={"outline"} className="mr-5 hover:font-semibold">
+            <a href="/KiranKumar-Resume.pdf" target="_blank">
+              Resume
+            </a>
+          </Button>
 
-        {/* <Button variant={"outline"} className="mr-5">
+          {/* <Button variant={"outline"} className="mr-5">
           Contact
         </Button> */}
-        {/* <ThemeToggle /> */}
+          {/* <ThemeToggle /> */}
+        </div>
       </div>
     </nav>
   );
